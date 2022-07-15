@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dasboard.css">
+    <!-- Fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<script src="main.js" ></script> 
+<script src="update.js"></script>
+
+<body>
+    <nav>
+        <div class="logo">ZeroWaste</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index">Home</a></li>
+            <li><a href="dashboard">Dashboard</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+<br>
+    <div class="u-txt">
+        <h3>Hii Alex,</h3>
+        <h6>You have started a wonderful journey, Keep Rewarding yourself</h6>
+    </div>
+    
+   
+    <div class="coins">
+        <div class="coin-count">
+            <h1><span class="nc" id="ctr"><%= cid %></span></h1>
+        </div>
+        <div class="coin-png">
+            <img src="img/coin.png" alt="">
+        </div>
+    </div>
+    <h6 class="coin-txt">You have <span class="nc" id="ctrs"><%= cid %></span> coins, Earn more by cleaning your city</h6>
+<br><br> <br>
+    <section class="redeemed">
+        <h2>Redeemed Coupns</h2>
+        <div class="r-coupons">
+            <!-- ---------------------Card------------------------------ -->
+            <div class="rcard">
+                <div class="rcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>click to check the code</h6>
+                </div>
+            </div>
+            <!-- ---------------------Card------------------------------ -->
+            <div class="rcard">
+                <div class="rcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>click to check the code</h6>
+                </div>
+            </div>
+            <span id="dots"></span>
+            <span id="more">
+            <!-- ---------------------Card------------------------------ -->
+            <div class="rcard">
+                <div class="rcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>click to check the code</h6>
+                </div>
+            </div>
+            <!-- ---------------------Card------------------------------ -->
+            <div class="rcard">
+                <div class="rcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>click to check the code</h6>
+                </div>
+            </div>
+        </span>
+        <button onclick="myFunction()" id="myBtn" class="m-btn">See all</button>
+        </div>
+
+    </section>
+
+    <section class="redeemed">
+        <h2>Buy Coupns</h2>
+        <div class="r-coupons">
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            <span id="b-dots"></span>
+            <span id="b-more">
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            <!-- ---------------------Buying Card------------------------------ -->
+            <div class="rcard">
+                <div class="bcard-img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5d825aa26de3150009a4616c/0x0.jpg?format=jpg&crop=416,416,x0,y0,safe&fit=crop" alt="">
+                </div>
+                <div class="rcard-txt">
+                    <h5>Amazon Gift Voucher</h5>
+                    <h3>&#8377 500</h3>
+                    <h6>Terms and Conditions</h6>
+                    <div class="b-div">
+                    <h6>2000 coins requuired</h6>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                </div>
+            </div>
+            
+            
+            </span>
+        <button onclick="bfunction()" id="b-Btn" class="m-btn">See all</button>
+        </div>
+
+    </section>
+    <!-- Start of Footer -->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h4>Zero Waste</h4>
+                </a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus nostrum deleniti?
+                </p>
+            </div>
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="dashboard">Dashboard</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 987654321</p>
+                    <p>zeroWaste@gmail.com</p>
+                </div>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; Zero Waste</small>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+</body>
+
+<script>
+        function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "See all";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "See less";
+    moreText.style.display = "inline";
+  }
+
+}
+
+function bfunction(){
+    var bdots = document.getElementById("b-dots");
+  var bmoreText = document.getElementById("b-more");
+  var bbtnText = document.getElementById("b-Btn");
+
+  if (bdots.style.display === "none") {
+    bdots.style.display = "inline";
+    bbtnText.innerHTML = "See all";
+    bmoreText.style.display = "none";
+  } else {
+    bdots.style.display = "none";
+    bbtnText.innerHTML = "See less";
+    bmoreText.style.display = "inline";
+  }
+}
+</script>
+</html>

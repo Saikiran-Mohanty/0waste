@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/log.css">
+    <!-- Fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<script src="js/main.js"></script>
+<script src="js/login.js"></script>
+<script>
+    // Get the modal
+var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }  
+</script>
+
+<body>
+    <nav>
+        <div class="logo">ZeroWaste</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="dashboard">Dashboard</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="log">
+        <!-- Button to open the modal -->
+<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+  <form class="modal-content" action="/" method="post" id="signup">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+    </div>
+    <center>
+        <div class="home-txt">
+            <h1>Zero</h1>
+            <h1>Waste</h1>
+            <h4>A Simple bin which rewards you to keep Your city clean. With a aim to make India clean and smart. As
+                smart problems need smart solution</h4>
+        </div>
+    </center>
+
+    <center>
+
+        <div class="s-btn">
+            <!-- Button to open the modal login form -->
+            <a href="scanner">SCAN</a>
+        </div>
+    </center>
+
+    <!-- Start of Footer -->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h4>ZeroWaste</h4>
+                </a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus nostrum deleniti?
+                </p>
+            </div>
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="homr">Home</a></li>
+                    <li><a href="dashboard">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 987654321</p>
+                    <p>ZeroWaste@gmail.com</p>
+                </div>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; Saikiran Mohanty</small>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+</body>
+
+</html>
