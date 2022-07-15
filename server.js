@@ -38,6 +38,13 @@ app.get("/dashboard", function(req,res){
     
 })
 
+app.get("/zero", function(req,res){
+    id=0;
+    console.log("Restarted with inital value");
+
+    res.render("dashboard",{cid:id})
+})
+
 app.get("/scanner", function(req,res){
     
     res.render("scanner")
@@ -60,5 +67,5 @@ app.post('/', function (req, res) {
 
 const PORT=process.env.PORT || 5000;
 app.listen(PORT, function(){
-    console.log("server started on port 3000")
+    console.log("server started...")
 })
